@@ -1,0 +1,20 @@
+package domain;
+
+import entities.Aluno;
+
+public class AlunoMain {
+
+	public static void main(String[] args) {
+		Aluno gustavo = new Aluno();
+		gustavo.codAluno = 1;
+		gustavo.nome = "Gustavo";
+		gustavo.telefone = "24992001122";
+		gustavo.endereco = "Rua do Imperador etc etc";
+		gustavo.nota1 = 6.5;
+		gustavo.nota2 = 2;
+		
+		System.out.println("Nota do " + gustavo.nome + ": " + gustavo.calcularNota());
+		gustavo.imprimir();
+	}
+
+}

@@ -1,0 +1,11 @@
+package exercicios;
+
+public class Casting {
+
+	public static void main(String[] args) {
+		double numero1 = 23.543626;
+		int numero2 = (int) numero1;
+		System.out.println(numero2);
+	}
+
+}

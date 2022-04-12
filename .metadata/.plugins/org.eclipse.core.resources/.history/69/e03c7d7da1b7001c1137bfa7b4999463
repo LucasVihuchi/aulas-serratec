@@ -1,0 +1,20 @@
+package exercicios;
+
+public class ExemploAposentadoria {
+
+	public static void main(String[] args) {
+		int idade = 18;
+		
+		
+		if (idade >= 65) {
+			System.out.println("A pessoa pode se aposentar");
+		}
+		else if (idade >= 16 && idade < 65) {
+			System.out.println("A pessoa está no período ativo profissional");
+		}
+		else {
+			System.out.println("A pessoa não pode trabalhar");
+		}
+	}
+
+}
