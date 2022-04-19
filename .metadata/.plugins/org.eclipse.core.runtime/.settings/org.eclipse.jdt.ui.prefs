@@ -1,30 +1,9 @@
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
 content_assist_number_of_computers=12
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0
 eclipse.preferences.version=1
-org.eclipse.jdt.internal.ui.navigator.layout=2
-org.eclipse.jdt.internal.ui.navigator.librariesnode=true
-org.eclipse.jdt.ui.exception.name=e
 org.eclipse.jdt.ui.formatterprofiles.version=22
-org.eclipse.jdt.ui.gettersetter.use.is=true
-org.eclipse.jdt.ui.overrideannotation=true
-org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
-org.eclipse.jdt.ui.typefilter.disabled=java.awt.*;java.rmi.*;org.graalvm.*
-org.eclipse.jdt.ui.typefilter.enabled=com.sun.*;io.micrometer.shaded.*;jdk.*;sun.*;java.awt.List
-org.eclipse.jdt.ui.visibility.order=B,V,R,D,
-outlinesortoption=T,SF,SI,SM,F,I,C,M,
-spelling_ignore_ampersand_in_properties=true
-spelling_ignore_digits=true
-spelling_ignore_java_strings=true
-spelling_ignore_mixed=true
-spelling_ignore_non_letters=true
-spelling_ignore_sentence=true
-spelling_ignore_single_letters=true
-spelling_ignore_upper=true
-spelling_ignore_urls=true
 spelling_locale_initialized=true
-spelling_user_dictionary_encoding=
 typefilter_migrated_2=true
 useAnnotationsPrefPage=true
 useQuickDiffPrefPage=true

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
-    <entry loc="C:\Program Files\OpenJDK\jdk-11.0.8.10-hotspot" stamp="1649296125787"/>
-    <entry loc="C:\Program Files\Java\jdk-17.0.2" stamp="1649389566281"/>
+    <entry loc="/Users/lucas.vihuchi/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_17.0.2.v20220201-1208/jre" stamp="1649433998780"/>
+    <entry loc="/Users/lucas.vihuchi/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_17.0.2.v20220201-1208" stamp="1649433998780"/>
+    <entry loc="/Users/lucas.vihuchi/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home" stamp="1644266889488"/>
 </dirs>
