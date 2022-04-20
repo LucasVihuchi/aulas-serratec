@@ -2,4 +2,29 @@
 <libraryInfos>
     <libraryInfo home="C:\Program Files\OpenJDK\jdk-11.0.8.10-hotspot" version="11.0.8"/>
     <libraryInfo home="C:\Program Files\Java\jdk-17.0.2" version="17.0.2"/>
+    <libraryInfo home="/Users/lucas.vihuchi/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_17.0.2.v20220201-1208/jre" version="17.0.2"/>
+    <libraryInfo home="/Users/lucas.vihuchi/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_17.0.2.v20220201-1208" version="17.0.2"/>
+    <libraryInfo home="/Users/lucas.vihuchi/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home" version="1.8.0_322">
+        <bootpath>
+            <entry path="/Users/lucas.vihuchi/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/lib/resources.jar"/>
+            <entry path="/Users/lucas.vihuchi/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/lib/rt.jar"/>
+            <entry path="/Users/lucas.vihuchi/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/lib/sunrsasign.jar"/>
+            <entry path="/Users/lucas.vihuchi/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/lib/jsse.jar"/>
+            <entry path="/Users/lucas.vihuchi/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/lib/jce.jar"/>
+            <entry path="/Users/lucas.vihuchi/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/lib/charsets.jar"/>
+            <entry path="/Users/lucas.vihuchi/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/lib/jfr.jar"/>
+            <entry path="/Users/lucas.vihuchi/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="/Users/lucas.vihuchi/Library/Java/Extensions"/>
+            <entry path="/Users/lucas.vihuchi/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/lib/ext"/>
+            <entry path="/Library/Java/Extensions"/>
+            <entry path="/Network/Library/Java/Extensions"/>
+            <entry path="/System/Library/Java/Extensions"/>
+            <entry path="/usr/lib/java"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="/Users/lucas.vihuchi/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/lib/endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
 </libraryInfos>

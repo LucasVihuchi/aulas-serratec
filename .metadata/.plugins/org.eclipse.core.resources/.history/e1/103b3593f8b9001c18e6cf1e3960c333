@@ -1,6 +1,0 @@
-package exercicios;
-
-public class SaqueDeposito {
-	Conta c1 = new Conta();
-	c1.
-}
