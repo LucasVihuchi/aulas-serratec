@@ -2,4 +2,11 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="br.com.serratec.versao1.entidades.Cachorro"/>
     <fullyQualifiedTypeName name="br.com.serratec.versao2comgetset.entidades.Cachorro2"/>
+    <fullyQualifiedTypeName name="br.com.serratec.entidade.Pessoa"/>
+    <fullyQualifiedTypeName name="br.com.serratec.entidade.Imovel"/>
+    <fullyQualifiedTypeName name="br.com.serratec.entidade.Funcionario"/>
+    <fullyQualifiedTypeName name="br.com.serratec.entidade.Assistente"/>
+    <fullyQualifiedTypeName name="br.com.serratec.interfaces.Autenticacao"/>
+    <fullyQualifiedTypeName name="br.com.serratec.interfaces.Emprestimo"/>
+    <fullyQualifiedTypeName name="br.com.serratec.interfaces.AutenticacaoFuncionarios"/>
 </qualifiedTypeNameHistroy>
