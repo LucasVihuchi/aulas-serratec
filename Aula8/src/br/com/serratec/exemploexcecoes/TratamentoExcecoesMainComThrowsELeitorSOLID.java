@@ -10,8 +10,7 @@ public class TratamentoExcecoesMainComThrowsELeitorSOLID {
 			Scanner leitor = new Scanner(System.in);
 
 			int numero1 = lerInteiro(leitor, "Insira o primeiro número: ");
-
-			leitor.close();
+//			leitor.close();
 			int numero2 = lerInteiro(leitor, "Insira o segundo número: ");
 
 			// Tratamento para divisão por 0
@@ -43,9 +42,19 @@ public class TratamentoExcecoesMainComThrowsELeitorSOLID {
 			System.out.print(mensagemLeitura);
 			try {
 				numero = leitor.nextInt();
+				if (numero < 0) {
+					// Throw lança nova exceção
+					throw new NumeroNegativoException();
+				}
 				break;
+			// Catch mais específicos devem vir primeiro do que os mais gerais
 			} catch (InputMismatchException ie) {
 				System.out.println("Insira um número. Outros caracteres não são aceitos");
+			} catch (NumeroNegativoException ne) {
+				System.out.println("Insira um número não negativo");
+				System.exit(1);
+			} catch (Exception e) {
+				System.out.println("Alguma coisa aconteceu");
 			} finally {
 				// Executado se a exceção estourar ou não
 				leitor.nextLine();
