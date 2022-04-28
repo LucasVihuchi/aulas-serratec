@@ -9,9 +9,13 @@ import br.com.vihuchi.entidades.Livro;
 import br.com.vihuchi.enums.GeneroLivro;
 import br.com.vihuchi.excecoes.DocumentoInvalidoException;
 import br.com.vihuchi.excecoes.EnumInexistenteException;
+import br.com.vihuchi.repositorios.AutorRepositorio;
+import br.com.vihuchi.repositorios.LivroRepositorio;
 
 public class SistemaBiblioteca {
 	public static void main(String[] args) {
+		autoresLoader();
+		
 		Scanner leitor = new Scanner(System.in);
 
 		Bibliotecario b1;
@@ -70,17 +74,18 @@ public class SistemaBiblioteca {
 			}
 		} while (true);
 		
-		// Cena dos capitulos de amanhã
-		System.out.println("Insira o autor do livro: ");
-		Autor autor = new Autor(1, "Stephen King", "Cara que escreveu uns livros maneiros");
+		System.out.print("Insira o id do autor do livro: ");
+		int idAutor = leitor.nextInt();
+		leitor.nextLine();
+		Autor autor = AutorRepositorio.retornaAutor(idAutor);
 		
 		System.out.print("Insira a quantidade em estoque do livro: ");
 		int qtdEtoque = leitor.nextInt();
 		leitor.nextLine();
 		
 		Livro l1 = usuarioAtivo.cadastrarLivro(id, titulo, edicao, generoLivro, autor, qtdEtoque);
-		
-		System.out.println("Livro cadastro: " + l1);
+		LivroRepositorio.adicionaLivro(l1);
+		System.out.println("Livro cadastrado: " + l1);
 	}
 
 	public static int lerOpcao(Scanner leitor, int opcaoMaxima, String textoPrevio) {
@@ -105,4 +110,14 @@ public class SistemaBiblioteca {
 		return opcao;
 	}
 
+	public static void autoresLoader() {
+		Autor stephen = new Autor(1, "Stephen King", "Cara que escreveu uns livros maneiros");
+		AutorRepositorio.adicionaAutor(stephen);
+		Autor jk = new Autor(2, "J.K. Rowling", "Dona do Harry Potter");
+		AutorRepositorio.adicionaAutor(jk);
+		Autor tolkien = new Autor(3, "Tolkien", "O cara do Senhor dos anéis e do hobbit");
+		AutorRepositorio.adicionaAutor(tolkien);
+		Autor machadao = new Autor(4, "Machado de Assis", "O cara do Dom Casmurro");
+		AutorRepositorio.adicionaAutor(machadao);
+	}
 }
