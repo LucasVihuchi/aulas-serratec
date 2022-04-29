@@ -1,5 +1,6 @@
 package br.com.vihuchi;
 
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -7,8 +8,10 @@ import br.com.vihuchi.entidades.Autor;
 import br.com.vihuchi.entidades.Bibliotecario;
 import br.com.vihuchi.entidades.Livro;
 import br.com.vihuchi.enums.GeneroLivro;
+import br.com.vihuchi.excecoes.CadastroExistenteException;
 import br.com.vihuchi.excecoes.DocumentoInvalidoException;
 import br.com.vihuchi.excecoes.EnumInexistenteException;
+import br.com.vihuchi.manipuladores.ArquivoAutoresManipulador;
 import br.com.vihuchi.repositorios.AutorRepositorio;
 import br.com.vihuchi.repositorios.LivroRepositorio;
 
@@ -37,7 +40,7 @@ public class SistemaBiblioteca {
 			handleCadastrarLivro(leitor, usuarioAtivo);
 			break;
 		case 2:
-			System.out.println("Chama cadastro autor");
+			handleCadastrarAutor(leitor);
 			break;
 		case 3:
 			System.out.println("Alugar livro");
@@ -88,6 +91,29 @@ public class SistemaBiblioteca {
 		System.out.println("Livro cadastrado: " + l1);
 	}
 
+	public static void handleCadastrarAutor(Scanner leitor) {
+		System.out.print("Insira o id do autor: ");
+		int id = leitor.nextInt();
+		leitor.nextLine();
+		
+		System.out.print("Insira o nome do autor: ");
+		String nome = leitor.nextLine();
+		
+		System.out.print("Insira a descrição do autor: ");
+		String descricao = leitor.nextLine();
+		
+		Autor autor = new Autor(id, nome, descricao);
+		try {
+			ArquivoAutoresManipulador.adicionaAutor(autor);			
+		} catch (CadastroExistenteException e) {
+			System.out.println("O cadastro associado a esse id já existe");
+		} catch (IOException e) {
+			e.printStackTrace();
+			System.out.println("A permissão de escrita de arquivos não fornecida");
+			System.exit(1);
+		}
+	}
+	
 	public static int lerOpcao(Scanner leitor, int opcaoMaxima, String textoPrevio) {
 		int opcao;
 
@@ -111,13 +137,11 @@ public class SistemaBiblioteca {
 	}
 
 	public static void autoresLoader() {
-		Autor stephen = new Autor(1, "Stephen King", "Cara que escreveu uns livros maneiros");
-		AutorRepositorio.adicionaAutor(stephen);
-		Autor jk = new Autor(2, "J.K. Rowling", "Dona do Harry Potter");
-		AutorRepositorio.adicionaAutor(jk);
-		Autor tolkien = new Autor(3, "Tolkien", "O cara do Senhor dos anéis e do hobbit");
-		AutorRepositorio.adicionaAutor(tolkien);
-		Autor machadao = new Autor(4, "Machado de Assis", "O cara do Dom Casmurro");
-		AutorRepositorio.adicionaAutor(machadao);
+		try {
+			ArquivoAutoresManipulador.arquivoAutoresLoader();
+		} catch (IOException e) {
+			System.out.println("Ocorreu um problema no carregamento dos autores");
+			System.exit(1);
+		}
 	}
 }
