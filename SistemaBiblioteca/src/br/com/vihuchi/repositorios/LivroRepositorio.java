@@ -17,13 +17,6 @@ public class LivroRepositorio {
 		mapaLivros.put(livro.getId(), livro);
 	}
 	
-	public static void removeLivro(int id) {
-		if (!mapaLivros.containsKey(id)) {
-			throw new CadastroInexistenteException();
-		}
-		mapaLivros.remove(id);
-	}
-	
 	public static Livro retornaLivro(int id) {
 		Livro livroPesquisado = mapaLivros.get(id);
 		if (livroPesquisado == null) {

@@ -4,6 +4,7 @@
 	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="JavaSE-11"/>
 	<item key="org.eclipse.jdt.ui.last.selected.create.moduleinfo" value="false"/>
 	<item key="org.eclipse.jdt.ui.last.external.project" value="/Users/lucas.vihuchi/eclipse-workspace/SistemaBancario"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="/Users/lucas.vihuchi/Downloads"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="1"/>
@@ -53,6 +54,9 @@
 		<item key="LimitValue" value="10"/>
 		<item key="SkipNull" value="false"/>
 		<item key="ToStringTemplateSelected" value="0"/>
+		<item key="InstanceOf" value="false"/>
+		<item key="Blocks" value="false"/>
+		<item key="Objects.equals &amp; Objects.hash" value="true"/>
 	</section>
 	<section name="AddGetterSetterDialog">
 		<item key="SortOrdering" value="false"/>
@@ -102,5 +106,59 @@
 		<item key="index" value="0"/>
 	</section>
 	<section name="RenameInformationPopup">
+	</section>
+	<section name="FatJarPackageWizard">
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_SAVE" value="false"/>
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="/Users/lucas.vihuchi/eclipse-workspace"/>
+		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="2"/>
+		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="SistemaBiblioteca - SistemaBiblioteca"/>
+		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="/Users/lucas.vihuchi/Downloads/biblioteca.jar"/>
+		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="/Users/lucas.vihuchi/Downloads/biblioteca.jar"/>
+		</list>
+		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value=".xml"/>
+		</list>
+	</section>
+	<section name="JavadocWizardDialog">
+		<item key="DIALOG_X_ORIGIN" value="215"/>
+		<item key="DIALOG_Y_ORIGIN" value="48"/>
+		<item key="DIALOG_WIDTH" value="850"/>
+		<item key="DIALOG_HEIGHT" value="528"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="javadoc">
+		<item key="javadoc_command_history" value="/Users/lucas.vihuchi/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_17.0.2.v20220201-1208/jre/bin/javadoc"/>
+		<item key="fromStandard" value="true"/>
+		<item key="docletname" value=""/>
+		<item key="docletpath" value=""/>
+		<item key="access" value="public"/>
+		<item key="use" value="true"/>
+		<item key="author" value="true"/>
+		<item key="version" value="true"/>
+		<item key="nodeprecated" value="false"/>
+		<item key="nodeprecatedlist" value="false"/>
+		<item key="splitindex" value="true"/>
+		<item key="noindex" value="false"/>
+		<item key="notree" value="false"/>
+		<item key="nonavbar" value="false"/>
+		<item key="openinbrowser" value="false"/>
+		<item key="source" value="17"/>
+		<item key="antpath" value="/Users/lucas.vihuchi/eclipse-workspace/SistemaBancario/javadoc.xml"/>
+		<item key="destdir" value="/Users/lucas.vihuchi/eclipse-workspace/SistemaBancario/doc"/>
+		<section name="projects">
+			<section name="SistemaBancario">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/lucas.vihuchi/eclipse-workspace/SistemaBancario/doc"/>
+				<item key="antpath" value="/Users/lucas.vihuchi/eclipse-workspace/SistemaBancario/javadoc.xml"/>
+			</section>
+		</section>
+	</section>
+	<section name="DialogBounds_GenerateHashCodeEqualsDialog">
+		<item key="DIALOG_X_ORIGIN" value="577"/>
+		<item key="DIALOG_Y_ORIGIN" value="113"/>
+		<item key="DIALOG_WIDTH" value="549"/>
+		<item key="DIALOG_HEIGHT" value="529"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 </section>

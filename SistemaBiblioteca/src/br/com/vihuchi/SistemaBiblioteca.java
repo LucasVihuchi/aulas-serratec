@@ -12,12 +12,14 @@ import br.com.vihuchi.excecoes.CadastroExistenteException;
 import br.com.vihuchi.excecoes.DocumentoInvalidoException;
 import br.com.vihuchi.excecoes.EnumInexistenteException;
 import br.com.vihuchi.manipuladores.ArquivoAutoresManipulador;
+import br.com.vihuchi.manipuladores.ArquivoLivrosManipulador;
 import br.com.vihuchi.repositorios.AutorRepositorio;
 import br.com.vihuchi.repositorios.LivroRepositorio;
 
 public class SistemaBiblioteca {
 	public static void main(String[] args) {
 		autoresLoader();
+		ArquivoLivrosManipulador.arquivoLivrosLoader();
 		
 		Scanner leitor = new Scanner(System.in);
 

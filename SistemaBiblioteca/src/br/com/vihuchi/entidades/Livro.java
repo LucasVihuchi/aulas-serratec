@@ -35,6 +35,11 @@ public final class Livro {
 		this(id, titulo, edicao, genero, autor, cadastradoPor, qtdEstoque);
 		this.dataPublicacao = dataPublicacao;
 	}
+	
+	public Livro(int id, String titulo, String edicao, GeneroLivro genero, Autor autor, Bibliotecario cadastradoPor, int qtdEstoque, LocalDate dataPublicacao, int qtdalugados) {
+		this(id, titulo, edicao, genero, autor, cadastradoPor, qtdEstoque, dataPublicacao);
+		this.qtdAlugado = qtdalugados;
+	}
 
 	public Autor getAutor() {
 		return autor;
